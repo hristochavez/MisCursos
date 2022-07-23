@@ -1,12 +1,23 @@
 body {
     font-family: 'Fira Sans', sans-serif;
+    background-color: #e5e5e5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: rgb(158, 10, 177);
 }
 
 #alumn-container {
     padding: 1rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4px;
+    column-gap: 8px;
 }
 
 #alumn-photo {
@@ -14,8 +25,9 @@ body {
 }
 
 #alumn-photo > img {
-    width: 300px;
-    border-radius: 50%;   
+    width: 350px;
+    border-radius: 50%;
+    border: 1px solid black; 
 }
 
 #alumn-description {
@@ -36,19 +48,29 @@ body {
     margin: 15px 0 0 0;
 }
 
+#slogan span {
+    font-size: 1.5rem;
+}
+
 #courses-container {
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     width: 96%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 4px;
-    column-gap: 4px;
+    row-gap: 12px;
+    column-gap: 8px;
 }
 
 .course-box {
-    border: 3px solid black;
+    border: 3px solid rgb(57, 60, 59);
     padding: 0 8px;
     border-radius: 8px;
+    background-color: #f1f1f1;
+    transition: background-color 0.5s;
+}
+
+.course-box:hover {
+    background-color: rgb(165, 203, 238);
 }
 
 .course-box > p {
@@ -59,20 +81,59 @@ body {
     font-weight: bold;
 }
 
+.duration-time {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .topics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4px;
     row-gap: 4px;
     text-align: center;
+    align-items: center;
 }
 
 .topics > span {
-    border: 1px solid black;
+    border: 1px solid rgb(89, 120, 164);
+    background-color: rgb(95 98 97);
+    color: white;
     border-radius: 12px;
-    padding: 2px;
+    padding: 3px;
 }
 
 .certificate {
     text-align: center;
+}
+
+.certificate img {
+    width: 1.15rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(95 98 97);
+}
+
+#social-media {
+    padding: 8px 0 0 4px;
+    align-self: center;
+    justify-self: start;
+    display: flex;
+}
+
+#social-media p {
+    margin: 0 auto;   
+}
+
+#social-media img {
+    width: 48px;
+}
+
+#creator {
+    padding: 8px 4px 0 0;
+    align-self: flex-end;
+    justify-self: flex-end;
+    color: white;
 }

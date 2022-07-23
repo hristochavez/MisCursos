@@ -1,0 +1,78 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#alumn-container {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4px;
+}
+
+#alumn-photo {
+    text-align: right;
+}
+
+#alumn-photo > img {
+    width: 300px;
+    border-radius: 50%;   
+}
+
+#alumn-description {
+    display: grid;
+    align-items: center;
+}
+
+#name {
+    margin: 0 0 0.5rem 0;
+}
+
+.more-info {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#slogan {
+    margin: 15px 0 0 0;
+}
+
+#courses-container {
+    margin: 0 auto;
+    width: 96%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4px;
+    column-gap: 4px;
+}
+
+.course-box {
+    border: 3px solid black;
+    padding: 0 8px;
+    border-radius: 8px;
+}
+
+.course-box > p {
+    font-size: 1.2rem;
+}
+
+.course-attrib {
+    font-weight: bold;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4px;
+    row-gap: 4px;
+    text-align: center;
+}
+
+.topics > span {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 2px;
+}
+
+.certificate {
+    text-align: center;
+}
